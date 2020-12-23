@@ -31,7 +31,7 @@
 
     $my_password_hash = hash('sha512', $mypassword);
 
-	$sql="SELECT * FROM $tbl_name WHERE BINARY username='$myusername' and password='$my_password_hash'";
+// 	$sql="SELECT * FROM $tbl_name WHERE BINARY username='$myusername' and password='$my_password_hash'";
 
 	$sql = 
         "INSERT INTO $tbl_name (username, password, full_name)
